@@ -4,7 +4,7 @@ import styles from './styles.module.scss';
 
 export const Process = () => {
   return (
-    <section className={styles.process}>
+    <section id="how-we-work" className={styles.process}>
       <div className={styles.container}>
         <div className={styles.content}>
           <header className={styles.header}>

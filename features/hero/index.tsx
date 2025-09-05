@@ -1,13 +1,10 @@
 import Image from 'next/image';
-import { Header } from '@/components/header';
 import styles from './styles.module.scss';
 import { TerminalAnimated } from './terminal-animated';
 
 export const Hero = () => {
   return (
     <section className={styles.hero}>
-      <Header />
-
       <div className={styles.content}>
         <div className={styles.container}>
           <div className={styles.textContent}>
