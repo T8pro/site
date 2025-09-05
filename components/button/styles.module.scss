@@ -13,6 +13,8 @@
   letter-spacing: 0.5px;
   gap: 8px;
   outline: none;
+  font-weight: 900;
+  font-style: italic;
 
   &:focus-visible {
     box-shadow: 0 0 0 3px rgba(103, 154, 88, 0.35);
@@ -42,7 +44,7 @@
 // Variants
 .primary {
   background-color: #679a58;
-  color: white;
+  color: #181914;
 
   &:hover {
     background-color: #5a8a4e;
@@ -51,13 +53,32 @@
 }
 
 .secondary {
-  background-color: transparent;
-  color: #679a58;
-  border: 2px solid #679a58;
+  background-color: #679a58;
+  color: #cbd4c6;
 
   &:hover {
-    background-color: #679a58;
-    color: white;
+    background-color: #5a8a4e;
+    box-shadow: 0 4px 12px rgba(103, 154, 88, 0.3);
+  }
+}
+
+.tertiary {
+  background-color: #181914;
+  color: #cbd4c6;
+
+  &:hover {
+    background-color: #000000;
+    box-shadow: 0 4px 12px rgba(103, 154, 88, 0.3);
+  }
+}
+
+.quaternary {
+  background-color: #181914;
+  color: #cbd4c6;
+
+  &:hover {
+    background-color: #000000;
+    box-shadow: 0 4px 12px rgba(103, 154, 88, 0.3);
   }
 }
 

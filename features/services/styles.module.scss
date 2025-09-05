@@ -1,17 +1,15 @@
 // Services feature styles - mobile first
 .services {
-  background: #1a1a1a;
+  background: #0f110f;
   color: white;
-  padding: 60px 0;
-  
-  // Tablet and up
+  padding: 56px 0;
+
   @media (min-width: 768px) {
     padding: 80px 0;
   }
-  
-  // Desktop and up
+
   @media (min-width: 1024px) {
-    padding: 120px 0;
+    padding: 110px 0;
   }
 }
 
@@ -19,13 +17,10 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  
-  // Tablet and up
+
   @media (min-width: 768px) {
     padding: 0 40px;
   }
-  
-  // Desktop and up
   @media (min-width: 1024px) {
     padding: 0 60px;
   }
@@ -33,187 +28,117 @@
 
 .header {
   text-align: center;
-  margin-bottom: 40px;
-  
-  // Tablet and up
+  margin-bottom: 32px;
   @media (min-width: 768px) {
-    margin-bottom: 60px;
+    margin-bottom: 56px;
   }
-  
-  // Desktop and up
   @media (min-width: 1024px) {
-    margin-bottom: 80px;
+    margin-bottom: 72px;
   }
 }
 
 .title {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 900;
   color: #cbd4c6;
   font-style: italic;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin: 0;
-  
-  // Tablet and up
+
   @media (min-width: 768px) {
     font-size: 40px;
   }
-  
-  // Desktop and up
   @media (min-width: 1024px) {
-    font-size: 48px;
+    font-size: 46px;
   }
 }
 
 .mainServices {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 24px;
-  margin-bottom: 60px;
-  
-  // Tablet and up
+  gap: 16px;
+  margin-bottom: 48px;
+
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
-    margin-bottom: 80px;
+    gap: 24px;
+    margin-bottom: 64px;
   }
-  
-  // Desktop and up
+
   @media (min-width: 1024px) {
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    margin-bottom: 100px;
+    gap: 28px;
+    margin-bottom: 72px;
   }
 }
 
 .serviceCard {
-  text-align: center;
+  text-align: left;
+  background: #2a2f2a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
 .serviceIcon {
-  font-size: 40px;
-  margin-bottom: 16px;
-  
-  // Tablet and up
-  @media (min-width: 768px) {
-    font-size: 48px;
-    margin-bottom: 20px;
-  }
-  
-  // Desktop and up
-  @media (min-width: 1024px) {
-    font-size: 56px;
-    margin-bottom: 24px;
-  }
+  font-size: 64px;
+  margin-bottom: 12px;
+  color: #679a58;
 }
 
 .serviceTitle {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 12px;
-  color: white;
-  
-  // Tablet and up
-  @media (min-width: 768px) {
-    font-size: 20px;
-    margin-bottom: 16px;
-  }
-  
-  // Desktop and up
-  @media (min-width: 1024px) {
-    font-size: 22px;
-    margin-bottom: 20px;
-  }
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #cbd4c6;
 }
 
 .serviceDescription {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.5;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.85);
   margin: 0;
-  
-  // Tablet and up
-  @media (min-width: 768px) {
-    font-size: 15px;
-  }
-  
-  // Desktop and up
-  @media (min-width: 1024px) {
-    font-size: 16px;
-  }
 }
 
 .additionalServices {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 24px;
-  
-  // Tablet and up
+  gap: 14px;
   @media (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
+    grid-template-columns: 1fr;
   }
 }
 
 .additionalService {
   display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  border-left: 3px solid #679a58;
-  transition: all 0.3s ease;
-  
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 10px;
+  transition: background 0.2s ease;
+
   &:hover {
-    background: rgba(255, 255, 255, 0.08);
-    transform: translateX(4px);
-  }
-  
-  // Tablet and up
-  @media (min-width: 768px) {
-    gap: 20px;
-    padding: 24px;
+    background: rgba(255, 255, 255, 0.06);
   }
 }
 
 .additionalIcon {
-  font-size: 24px;
-  flex-shrink: 0;
-  margin-top: 4px;
-  
-  // Tablet and up
-  @media (min-width: 768px) {
-    font-size: 28px;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #679a58;
+  margin-top: 2px;
 }
 
 .additionalContent {
   flex: 1;
 }
 
-.additionalTitle {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: #679a58;
-  
-  // Tablet and up
-  @media (min-width: 768px) {
-    font-size: 18px;
-    margin-bottom: 12px;
-  }
-}
-
-.additionalDescription {
+.additionalLine {
   font-size: 13px;
   line-height: 1.5;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.85);
   margin: 0;
-  
-  // Tablet and up
-  @media (min-width: 768px) {
-    font-size: 14px;
-  }
 }

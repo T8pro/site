@@ -1,3 +1,4 @@
+import { clsx } from 'clsx';
 import { ReactNode } from 'react';
 import styles from './styles.module.scss';
 
@@ -12,9 +13,7 @@ export const Card = ({
   variant = 'default',
   className,
 }: CardProps) => {
-  const classes = [styles.card, styles[variant], className]
-    .filter(Boolean)
-    .join(' ');
+  const classes = clsx(styles.card, styles[variant], className, 'cursorTarget');
 
   return <div className={classes}>{children}</div>;
 };

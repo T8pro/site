@@ -8,7 +8,7 @@ export const Footer = () => {
         <div className={styles.content}>
           <Logo variant="footer" size="medium" />
           <div className={styles.info}>
-            <span className={styles.year}>2024</span>
+            <span className={styles.year}>2025</span>
             <span className={styles.separator}>-</span>
             <span className={styles.location}>United States</span>
           </div>

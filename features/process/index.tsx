@@ -26,8 +26,8 @@ export const Process = () => {
 
         <div className={styles.imageContainer}>
           <Image
-            src="/buildings.jpg"
-            alt="Modern buildings representing our professional approach"
+            src="/how-we-work.jpg"
+            alt=""
             width={600}
             height={800}
             className={styles.processImage}

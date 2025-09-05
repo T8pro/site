@@ -1,3 +1,4 @@
+import { GrTechnology } from 'react-icons/gr';
 import { Button } from '@/components/button';
 import { Logo } from '@/components/logo';
 import styles from './styles.module.scss';
@@ -12,7 +13,8 @@ export const Header = ({ ctaLabel = 'BE PRO', onCtaClick }: HeaderProps) => {
     <header className={styles.header}>
       <div className={styles.container}>
         <Logo variant="header" size="medium" />
-        <Button size="medium" onClick={onCtaClick}>
+
+        <Button size="large" onClick={onCtaClick} iconLeft={<GrTechnology />}>
           {ctaLabel}
         </Button>
       </div>

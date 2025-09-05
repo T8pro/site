@@ -3,7 +3,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  color: #ffffff;
+  color: #cbd4c6;
   background: #0c0f0c;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .title {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 900;
   line-height: 1.2;
   margin-bottom: 20px;
@@ -68,21 +68,22 @@
   letter-spacing: 0.5px;
 
   @media (min-width: 768px) {
-    font-size: 44px;
+    font-size: 32px;
     margin-bottom: 28px;
   }
 
   @media (min-width: 1024px) {
-    font-size: 56px;
+    font-size: 40px;
     margin-bottom: 32px;
   }
 }
 
 .creative {
-  color: #ffffff;
+  color: #cbd4c6;
   display: block;
   margin-bottom: 8px;
 }
+
 .highlight {
   color: #679a58;
 }
