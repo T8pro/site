@@ -1,0 +1,219 @@
+// Services feature styles - mobile first
+.services {
+  background: #1a1a1a;
+  color: white;
+  padding: 60px 0;
+  
+  // Tablet and up
+  @media (min-width: 768px) {
+    padding: 80px 0;
+  }
+  
+  // Desktop and up
+  @media (min-width: 1024px) {
+    padding: 120px 0;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  
+  // Tablet and up
+  @media (min-width: 768px) {
+    padding: 0 40px;
+  }
+  
+  // Desktop and up
+  @media (min-width: 1024px) {
+    padding: 0 60px;
+  }
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+  
+  // Tablet and up
+  @media (min-width: 768px) {
+    margin-bottom: 60px;
+  }
+  
+  // Desktop and up
+  @media (min-width: 1024px) {
+    margin-bottom: 80px;
+  }
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 900;
+  color: #cbd4c6;
+  font-style: italic;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+  
+  // Tablet and up
+  @media (min-width: 768px) {
+    font-size: 40px;
+  }
+  
+  // Desktop and up
+  @media (min-width: 1024px) {
+    font-size: 48px;
+  }
+}
+
+.mainServices {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-bottom: 60px;
+  
+  // Tablet and up
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-bottom: 80px;
+  }
+  
+  // Desktop and up
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 100px;
+  }
+}
+
+.serviceCard {
+  text-align: center;
+}
+
+.serviceIcon {
+  font-size: 40px;
+  margin-bottom: 16px;
+  
+  // Tablet and up
+  @media (min-width: 768px) {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  // Desktop and up
+  @media (min-width: 1024px) {
+    font-size: 56px;
+    margin-bottom: 24px;
+  }
+}
+
+.serviceTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: white;
+  
+  // Tablet and up
+  @media (min-width: 768px) {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  
+  // Desktop and up
+  @media (min-width: 1024px) {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+}
+
+.serviceDescription {
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  
+  // Tablet and up
+  @media (min-width: 768px) {
+    font-size: 15px;
+  }
+  
+  // Desktop and up
+  @media (min-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+.additionalServices {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  
+  // Tablet and up
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+}
+
+.additionalService {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border-left: 3px solid #679a58;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateX(4px);
+  }
+  
+  // Tablet and up
+  @media (min-width: 768px) {
+    gap: 20px;
+    padding: 24px;
+  }
+}
+
+.additionalIcon {
+  font-size: 24px;
+  flex-shrink: 0;
+  margin-top: 4px;
+  
+  // Tablet and up
+  @media (min-width: 768px) {
+    font-size: 28px;
+  }
+}
+
+.additionalContent {
+  flex: 1;
+}
+
+.additionalTitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #679a58;
+  
+  // Tablet and up
+  @media (min-width: 768px) {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+}
+
+.additionalDescription {
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  
+  // Tablet and up
+  @media (min-width: 768px) {
+    font-size: 14px;
+  }
+}
