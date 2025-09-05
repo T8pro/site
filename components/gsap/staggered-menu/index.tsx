@@ -7,7 +7,7 @@ import { StaggeredMenuProps } from './types';
 
 export const StaggeredMenu = ({
   position = 'right',
-  colors = ['#B19EEF', '#5227FF'],
+  colors = ['#181914', '#679a58'],
   items = menuItems,
   socialItems = socialItemsConstants,
   displaySocials = true,
@@ -16,7 +16,7 @@ export const StaggeredMenu = ({
   menuButtonColor = '#fff',
   openMenuButtonColor = '#fff',
   changeMenuColorOnOpen = true,
-  accentColor = '#5227FF',
+  accentColor = '#679a58',
   handleOpenAction = () => {},
   handleCloseAction = () => {},
 }: StaggeredMenuProps) => {

@@ -7,6 +7,7 @@ export const useTargetCursor = (props: TargetCursorProps) => {
     targetSelector = '.cursorTarget',
     spinDuration = 2,
     hideDefaultCursor = true,
+    disableOnCoarsePointer = true,
   } = props;
   const cursorRef = useRef<HTMLDivElement>(null);
   const cornersRef = useRef<NodeListOf<HTMLDivElement>>(null);
@@ -32,6 +33,19 @@ export const useTargetCursor = (props: TargetCursorProps) => {
   }, []);
 
   useEffect(() => {
+    // Skip entirely for coarse pointers (mobile) if requested
+    const isCoarse =
+      typeof window !== 'undefined' &&
+      (window.matchMedia?.('(pointer: coarse)').matches ||
+        window.matchMedia?.('(hover: none)').matches);
+
+    if (disableOnCoarsePointer && isCoarse) {
+      if (cursorRef.current) {
+        cursorRef.current.style.display = 'none';
+      }
+      return;
+    }
+
     if (!cursorRef.current) return;
 
     const originalCursor = document.body.style.cursor;
@@ -320,7 +334,14 @@ export const useTargetCursor = (props: TargetCursorProps) => {
       spinTl.current?.kill();
       document.body.style.cursor = originalCursor;
     };
-  }, [targetSelector, spinDuration, moveCursor, constants, hideDefaultCursor]);
+  }, [
+    targetSelector,
+    spinDuration,
+    moveCursor,
+    constants,
+    hideDefaultCursor,
+    disableOnCoarsePointer,
+  ]);
 
   useEffect(() => {
     if (!cursorRef.current || !spinTl.current) return;

@@ -293,7 +293,10 @@
 
 .sm-panel-itemLabel {
   display: inline-block;
+  font-family: var(--font-montserrat), sans-serif;
   will-change: transform;
+  font-size: 48px;
+  font-weight: 600;
   transform-origin: 50% 100%;
 }
 
